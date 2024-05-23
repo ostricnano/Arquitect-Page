@@ -5,6 +5,7 @@ const projectData = [
   {
     id: 1,
     image: './images/project-01.jpg',
+    name: 'Casa A',
     coleccion: 'Colección: Anfega Arquitectura',
     ubicacion: 'Ubicación: Ciudad de México',
     area: 'Área de Construcción: 120.78m2'
