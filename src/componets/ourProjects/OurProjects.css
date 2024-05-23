@@ -1,0 +1,14 @@
+p{
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #6f6b6b;
+}
+p span {
+  color:#ababab;
+  font-size: 1rem;
+  font-weight: 600;
+}
+img{
+  height: 220px;
+  object-fit: cover;
+}

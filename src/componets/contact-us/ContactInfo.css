@@ -1,0 +1,23 @@
+.info-block{
+  padding: 2rem;
+}
+.card-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 2px solid #ababab;
+}
+
+.card-info > p {
+  color: #050505;
+  font-size: 1rem;
+  font-weight:400;
+}
+.card-info > i {
+  font-size: 3rem;
+  color: #8a8a8b;
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+}
