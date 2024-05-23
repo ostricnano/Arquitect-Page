@@ -13,7 +13,7 @@ export const Hero: React.FC<HeroProps> = ({
   heroData
 }) => {
   return (
-    <section className='hero-block' data-testid='hero'>
+    <section id='home' className='hero-block' data-testid='hero'>
       <Carousel>
         {
           heroData?.map((item, index) => (

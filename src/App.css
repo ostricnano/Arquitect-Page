@@ -80,11 +80,11 @@ p {
 }
 .progress-bar {
   position: fixed;
-  top: 150;
+  top: 80;
   left: 0;
   right: 0;
-  height: 4px;
-  background-color: red;
+  height: 6px;
+  background: #ababab !important;
   transform-origin: 0%;
   z-index: 1000;
 }

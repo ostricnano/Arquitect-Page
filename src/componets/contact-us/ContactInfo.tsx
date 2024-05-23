@@ -3,7 +3,7 @@ import './ContactInfo.css'
 
 export const ContactInfo = () => {
   return (
-    <section className="info-block">
+    <section id='contact-us' className="info-block">
       <Container>
         <Row>
           <Col sm={4}>
