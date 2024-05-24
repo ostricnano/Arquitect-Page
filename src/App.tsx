@@ -8,6 +8,7 @@ import { OurServices } from './componets/ourservices/OurServices'
 import { Teams } from './componets/ourteam/Teams'
 import { motion, useScroll, useSpring } from "framer-motion";
 import './App.css'
+import { Testimonials } from './componets/testimonials/Testimonials'
 
 const heroData = [
   {
@@ -274,6 +275,7 @@ function App() {
           <OurServices serviceData={serviceData} />
           <Teams teamData={teamsData} />
           <OurProjects projectData={projectData} />
+          <Testimonials />
           <ContactUs />
         </main>
         <Footer/>
