@@ -1,6 +1,13 @@
+/* Title.css */
 .title-holder {
   text-align: center;
   margin: 0 0 40px;
+}
+
+.title-holder.animate-title {
+  animation-name: titleFadeIn;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
 }
 
 .title-holder h2 {
@@ -20,4 +27,13 @@
 .title-holder .subtitle:after {
   content: '-';
   margin: 0 0 0 5px;
+}
+
+@keyframes titleFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

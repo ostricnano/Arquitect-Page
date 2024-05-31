@@ -24,7 +24,7 @@ export const Hero: React.FC<HeroProps> = ({
                 className='d-block w-100 hero-img'
               />
               <Carousel.Caption>
-                <h3>{item.title}</h3>
+                <h3 className='title'>{item.title}</h3>
                 <p>{item.description}</p>
               </Carousel.Caption>
             </Carousel.Item>

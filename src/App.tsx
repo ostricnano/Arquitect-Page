@@ -9,6 +9,7 @@ import { Teams } from './componets/ourteam/Teams'
 import { motion, useScroll, useSpring } from "framer-motion";
 import './App.css'
 import { Testimonials } from './componets/testimonials/Testimonials'
+import { ReverseCard } from './componets/reverse-card/ReverseCard'
 
 const heroData = [
   {
@@ -273,8 +274,9 @@ function App() {
         <main>
           <Hero heroData={heroData}/>  
           <OurServices serviceData={serviceData} />
-          <Teams teamData={teamsData} />
           <OurProjects projectData={projectData} />
+          <ReverseCard projectData={projectData}/>
+          <Teams teamData={teamsData} />
           <Testimonials />
           <ContactUs />
         </main>

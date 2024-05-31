@@ -15,6 +15,8 @@ html {
 }
 
 body {
+  align-content: center;
+  align-items: center;
   font: 16px/1.6 "Muli", sans-serif;
   min-width: 320px;
   -webkit-font-smoothing: antialiased;
