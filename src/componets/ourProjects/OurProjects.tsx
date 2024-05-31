@@ -3,7 +3,7 @@ import { Button, Card, Col, Container, Row } from 'react-bootstrap'
 import './OurProjects.css'
 import { Title } from '../title/Title'
 
-interface ProjectProps {
+export interface ProjectProps {
   projectData: {
     id: number
     image: string,

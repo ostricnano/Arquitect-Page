@@ -49,3 +49,14 @@
   object-fit: cover;
   object-position: center center;
 }
+
+.title {
+  animation-name: title;
+  position: relative;
+  animation-duration: 1.5s;
+}
+
+@keyframes title {
+  0% {left: -150px; top: -300px;}
+  100% { left:0px; top:0px;}
+}

@@ -46,7 +46,7 @@ export const ContactUs = () => {
   }
 
   return (
-    <section className="block contact-block" data-testid='contact-id'>
+    <section className="contact-block" data-testid='contact-id'>
       <Container fluid>
         <Title 
           title='Contact-us'

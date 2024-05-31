@@ -19,18 +19,11 @@ export const OurServices: React.FC<ServicesProps> = ({
     threshold: 0.1  // Ajusta el umbral según sea necesario
   });
   return (
-    <motion.div 
+    <div 
       id='service' 
       className='block service-block' 
       data-testid='service'
-      ref={ref}  // Añade la referencia al contenedor
-      initial={{ opacity: 0.5, scale: 0.8 }}
-      animate={isInView ? { opacity: 1, scale: 1 } : {}}  // Inicia la animación solo si está en vista
-      transition={{
-        duration: 2,
-        delay: 0.8,
-        ease: [0, 0.71, 0.2, 1.01]
-      }}
+
     >
       <Container fluid>
         <Title
@@ -41,18 +34,27 @@ export const OurServices: React.FC<ServicesProps> = ({
           {
             serviceData.map((service: any, index: number) => (
               <Col sm={3} key={index}>
-                <div className="service-wrapper">
+                <motion.div className="service-wrapper"
+                  ref={ref}  // Añade la referencia al contenedor
+                  initial={{ opacity: 0.5, scale: 0.8 }}
+                  animate={isInView ? { opacity: 1, scale: 1 } : {}}  // Inicia la animación solo si está en vista
+                  transition={{
+                    duration: 2,
+                    delay: 0.8,
+                    ease: [0, 0.71, 0.2, 1.01]
+                  }}
+                >
                   <Image src={service.img} alt="service-1" rounded />
                   <div className='label text-center'>
                     <h3>{service.title}</h3>
                     <p>{service.description}</p>
                   </div>
-                </div>
+                </motion.div>
               </Col>
             ))
           }
         </Row>
       </Container>
-    </motion.div>
+    </div>
   )
 }

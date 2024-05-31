@@ -1,8 +1,9 @@
 import { Col, Container, Image, Row } from "react-bootstrap"
 import { Title } from "../title/Title"
 import './Teams.css'
+import { TeamList } from "./TeamList"
 
-interface TeamsProps {
+export interface TeamsProps {
   teamData: {
     id: number,
     image: string,
@@ -19,7 +20,7 @@ interface TeamsProps {
 export const Teams = ({ teamData }: TeamsProps) => {
 
   return (
-    <section className="block teams-block">
+    <section id='ourteams' className="block teams-block">
       <Container fluid>
         <Title title='Our teams' subtitle='some of our experts'/>
         <Row>
@@ -52,6 +53,9 @@ export const Teams = ({ teamData }: TeamsProps) => {
               </Col>
             ))
           }
+        </Row>
+        <Row>
+          <TeamList teamData={teamData}/>
         </Row>
       </Container>
     </section>
